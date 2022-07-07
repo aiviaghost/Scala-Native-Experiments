@@ -1,4 +1,11 @@
-import scalanative.unsafe._
+// mport scalanative.unsafe._
+
+def time[R](block: => R): Long = {
+    val t0 = System.nanoTime()
+    val result = block
+    val t1 = System.nanoTime()
+    t1 - t0
+}
 
 class ScalaMatrix private (val M: Array[Array[Float]]):
 
@@ -25,13 +32,20 @@ class ScalaMatrix private (val M: Array[Array[Float]]):
 
 object ScalaMatrix:
     def empty(n: Int): ScalaMatrix = 
-        ScalaMatrix(Array.fill(n)(Array(n)))
+        ScalaMatrix(Array.fill(n)(Array.ofDim[Float](n)))
 
     def fillRandom(n: Int): ScalaMatrix = 
         import util.Random.nextFloat
         ScalaMatrix(Array.fill(n)(Array.fill(n)(nextFloat())))
 
 @main def start() = 
-    val A = ScalaMatrix.fillRandom(4)
-    val B = ScalaMatrix.fillRandom(4)
-    println(A * B)
+    val its = 10
+    val N = 500
+    val t = (1 to its).map(it => {
+        println(s"Iteration: ${it}")
+        val A = ScalaMatrix.fillRandom(N)
+        val B = ScalaMatrix.fillRandom(N)
+        var x: ScalaMatrix = ScalaMatrix.empty(N)
+        time({x = A * B})
+    }).sum / (its * 1e9)
+    println(t)
