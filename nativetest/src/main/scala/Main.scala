@@ -45,7 +45,6 @@ object ScalaMatrix:
         println(s"Iteration: ${it}")
         val A = ScalaMatrix.fillRandom(N)
         val B = ScalaMatrix.fillRandom(N)
-        var x: ScalaMatrix = ScalaMatrix.empty(N)
-        time({x = A * B})
+        time({A * B})
     }).sum / (its * 1e9)
     println(t)
