@@ -2,15 +2,15 @@
     "version": "1.4.0",
     "project": {
         "name": "nativetest-build",
-        "directory": "/home/aiviaghost/Git-Repos/Scala-Native-Experiments/nativetest/project",
-        "workspaceDir": "/home/aiviaghost/Git-Repos/Scala-Native-Experiments/nativetest/project",
+        "directory": "/home/aiviaghost/Git-repos/Scala-Native-Experiments/nativetest/project",
+        "workspaceDir": "/home/aiviaghost/Git-repos/Scala-Native-Experiments/nativetest/project",
         "sources": [
-            "/home/aiviaghost/Git-Repos/Scala-Native-Experiments/nativetest/project/src/main/scala",
-            "/home/aiviaghost/Git-Repos/Scala-Native-Experiments/nativetest/project/src/main/scala-2.12",
-            "/home/aiviaghost/Git-Repos/Scala-Native-Experiments/nativetest/project/src/main/scala-2",
-            "/home/aiviaghost/Git-Repos/Scala-Native-Experiments/nativetest/project/src/main/java",
-            "/home/aiviaghost/Git-Repos/Scala-Native-Experiments/nativetest/project/src/main/scala-sbt-1.0",
-            "/home/aiviaghost/Git-Repos/Scala-Native-Experiments/nativetest/project/target/scala-2.12/sbt-1.0/src_managed/main"
+            "/home/aiviaghost/Git-repos/Scala-Native-Experiments/nativetest/project/src/main/scala",
+            "/home/aiviaghost/Git-repos/Scala-Native-Experiments/nativetest/project/src/main/scala-2.12",
+            "/home/aiviaghost/Git-repos/Scala-Native-Experiments/nativetest/project/src/main/scala-2",
+            "/home/aiviaghost/Git-repos/Scala-Native-Experiments/nativetest/project/src/main/java",
+            "/home/aiviaghost/Git-repos/Scala-Native-Experiments/nativetest/project/src/main/scala-sbt-1.0",
+            "/home/aiviaghost/Git-repos/Scala-Native-Experiments/nativetest/project/target/scala-2.12/sbt-1.0/src_managed/main"
         ],
         "dependencies": [
             
@@ -114,11 +114,11 @@
             "/home/aiviaghost/.cache/coursier/v1/https/repo1.maven.org/maven2/com/squareup/okio/okio/1.17.2/okio-1.17.2.jar",
             "/home/aiviaghost/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/config/1.3.3/config-1.3.3.jar"
         ],
-        "out": "/home/aiviaghost/Git-Repos/Scala-Native-Experiments/nativetest/project/.bloop/nativetest-build",
-        "classesDir": "/home/aiviaghost/Git-Repos/Scala-Native-Experiments/nativetest/project/.bloop/nativetest-build/scala-2.12/sbt-1.0/classes",
+        "out": "/home/aiviaghost/Git-repos/Scala-Native-Experiments/nativetest/project/.bloop/nativetest-build",
+        "classesDir": "/home/aiviaghost/Git-repos/Scala-Native-Experiments/nativetest/project/.bloop/nativetest-build/scala-2.12/sbt-1.0/classes",
         "resources": [
-            "/home/aiviaghost/Git-Repos/Scala-Native-Experiments/nativetest/project/src/main/resources",
-            "/home/aiviaghost/Git-Repos/Scala-Native-Experiments/nativetest/project/target/scala-2.12/sbt-1.0/resource_managed/main"
+            "/home/aiviaghost/Git-repos/Scala-Native-Experiments/nativetest/project/src/main/resources",
+            "/home/aiviaghost/Git-repos/Scala-Native-Experiments/nativetest/project/target/scala-2.12/sbt-1.0/resource_managed/main"
         ],
         "scala": {
             "organization": "org.scala-lang",
@@ -210,7 +210,7 @@
             "config": {
                 "home": "/usr/lib/jvm/java-17-openjdk-amd64",
                 "options": [
-                    "-Duser.dir=/home/aiviaghost/Git-Repos/Scala-Native-Experiments/nativetest/project"
+                    "-Duser.dir=/home/aiviaghost/Git-repos/Scala-Native-Experiments/nativetest/project"
                 ]
             },
             "mainClass": [
