@@ -1,12 +1,5 @@
 // mport scalanative.unsafe._
 
-def time[R](block: => R): Long = {
-    val t0 = System.nanoTime()
-    val result = block
-    val t1 = System.nanoTime()
-    t1 - t0
-}
-
 class ScalaMatrix private (val M: Array[Array[Float]]):
 
     assert(M.size == M(0).size && M.forall(_.size == M(0).size))
@@ -37,6 +30,14 @@ object ScalaMatrix:
     def fillRandom(n: Int): ScalaMatrix = 
         import util.Random.nextFloat
         ScalaMatrix(Array.fill(n)(Array.fill(n)(nextFloat())))
+
+        
+def time[R](block: => R): Long = {
+    val t0 = System.nanoTime()
+    val result = block
+    val t1 = System.nanoTime()
+    t1 - t0
+}
 
 @main def start() = 
     val its = 10
